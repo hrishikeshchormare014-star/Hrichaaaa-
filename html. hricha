@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For My Love💗🌻</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #ffd6e8, #fff);
+      color: #4a2c2a;
+      overflow-x: hidden;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-top: 30px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .typing {
+      font-size: 1.2rem;
+      margin: 20px 0;
+      min-height: 60px;
+    }
+
+    .letter {
+      background: rgba(255,255,255,0.7);
+      padding: 20px;
+      border-radius: 15px;
+      margin: 25px 0;
+      line-height: 1.7;
+      animation: fadeInUp 2s ease;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 12px;
+      margin-top: 25px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .footer {
+      margin: 40px 0 20px;
+      font-size: 1.1rem;
+    }
+
+    .heart {
+      position: fixed;
+      top: -10px;
+      color: red;
+      font-size: 20px;
+      animation: fall linear infinite;
+    }
+
+    @keyframes fall {
+      to {
+        transform: translateY(110vh);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>For My Love, Hrichaa ❤️</h1>
+
+    <div class="typing" id="typing"></div>
+
+    <div class="letter">
+      <p>
+        Hrichaa,
+  
+  
+
+           (My babyy)<br><br>
+        Suno!! Ham aapse bahot pyar karte par kabhi kabhi aapki harkatein dekh ke dimaag ghum jata hai aur dimag kharab ho jata hai 🫠kahi ka gussa kahi aur nikalta hai baki aap gf to achhhi ho aur meri khayal se biwi aur maa bhi achhi banoge if hamse shaadi kiye to😋😚 par ye nahii ki shaadi kiya to nakhre kam honge same rahenge aapko princess treatment dena hoga hame😋 ham bhi denge aapko princess treatment par aapko hamesha dena hai!!!😚 Aur kitna bhi kalesh ho jaye kitna bhi jhagda kyu naa ho jaye aapse naraz ho jayenge parr chhod ke jane ki ummid ham se naa rakho ham bade sakht londe yu aasani se pichha chhodne walo me se nahii hai 
+I love you so much my babyyyyyyyyyyyyyyy💋💋💋💋💋🫂🫂🫂🫂💗 I'm always with you in you're every type of condition🫂💗🤌🏻 baki hu to aapka bachhha hi naa galti hamse bhi hoti hi hai naa 😅 ham galti pe kaam karke vo bhi kam karr denge okay bachhha 💋💗
+
+
+
+Baki suna hai aapko hamare efforts nahii dikh rahe hai!! 🙂 Jab aakhon ki jagah dil se dekhoge toh apne aap dikhayi denge efforts bhi aur ham bhi 😚 chalo aaj ke liye itna hi ready bhi hona hai hame! 😅 I love you so much mera bachhha 🫂💋 I love you so much my babyyyyyyyyyyyyyyy 💋💋💋💋💋💋💋💋💗🫂🌻 I love you more my cutie pie 😚🪻 merii rasmalai 🌻🍃🪷 I love you meraaa kuchupuchu 💋🫂 
+
+Aur hamare liye utne hi important/pasandida jitna ki hame white lotus pasand hai!!!!🪷💗🫂😚 
+        <br><br>
+        Shayad main perfect nahi hoon,  
+        par ek cheez pakki hai —  
+        <b>Ham aapse beintehaa pyaar karte hain.</b>  
+        <br><br>
+        Iss Valentine’s Day par bas itna kehna tha…  
+        <br><br>
+        <b>Thank you for choosing me, loving me, and being mine.</b> ❤️
+        <br><br>
+        Forever yours,<br>
+        <b>Gentlemen</b>
+      </p>
+    </div>
+
+    <h2>I love you my baby
+    💞
+   
+   
+   
+   
+    
+    
+    will you be my valentine 😚</h2>
+
+    <div class="gallery">
+      <img src="img1.jpg">
+      <img src="img2.jpg">
+      <img src="img3.jpg">
+      <img src="img4.jpg">
+      <img src="img5.jpg">
+      <img src="img6.jpg">
+      <img src="img7.jpg">
+    </div>
+
+    <div class="footer">
+      “No matter where life takes us, my hand will always look for yours.” 🤍
+    </div>
+  </div>
+
+  <script>
+    const text = "Every heartbeat of mine whispers your name… 💗";
+    let index = 0;
+    function typeText() {
+      if (index < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeText, 80);
+      }
+    }
+    typeText();
+
+    function createHeart() {
+      const heart = document.createElement("div");
+      heart.className = "heart";
+      heart.innerHTML = "❤️";
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.animationDuration = (3 + Math.random() * 5) + "s";
+      document.body.appendChild(heart);
+
+      setTimeout(() => heart.remove(), 8000);
+    }
+    setInterval(createHeart, 400);
+  </script>
+
+</body>
+</html>
